@@ -5,11 +5,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import javax.validation.constraints.NotEmpty;
-
 import org.springframework.http.MediaType;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,7 +30,6 @@ public class FizzBuzzController {
 	@GetMapping(produces = MediaType.APPLICATION_JSON_VALUE, value = "/{number}")
 	public List<FizzBuzz> checkFizzBuzz(
 			@ApiParam(value = "Number to be FizzBuzz check")
-			@NotEmpty(message = "The informed values must be a list of integers") 
 			@PathVariable("number") 
 			List<Integer> numbers) {
 		return validateFizzBuzz(numbers);
@@ -43,16 +39,6 @@ public class FizzBuzzController {
 		List<FizzBuzz> fizzBuzzList = new ArrayList<>();
 		numbers.stream().forEach(number -> fizzBuzzList.add(new FizzBuzz(number)));
 		return fizzBuzzList;	
-	}
-
-	@ExceptionHandler
-	public String numberFormatHandler(NumberFormatException ex) {
-		return "It was informed a invalid parameter type";
-	}
-
-	@ExceptionHandler
-	public String npeHandler(NullPointerException ex) {
-		return "The list of parameteres, must not have and empty/null item";
 	}
 
 }
