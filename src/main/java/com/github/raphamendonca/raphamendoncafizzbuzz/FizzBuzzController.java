@@ -23,6 +23,7 @@ import io.swagger.annotations.ApiParam;
 @Validated
 public class FizzBuzzController {
 
+	@ApiOperation(value = "Obtain the list of the FizzBuzz numbers between 1 and 100")
 	@GetMapping(value = "/")
 	public List<FizzBuzz> listAllFizzBuzz() {
 		return validateFizzBuzz(IntStream.range(0, 100).boxed().collect(Collectors.toList()));

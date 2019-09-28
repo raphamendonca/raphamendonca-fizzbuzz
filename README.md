@@ -15,6 +15,9 @@ If is not divide by 3, 5 or 15 the given umber will be returned;
 Use the follow URL to reach the API:
     https://raphamendonca-fizzbuzz.herokuapp.com/
 
+here the Swagger of the API:
+https://raphamendonca-fizzbuzz.herokuapp.com/swagger-ui.html
+
 To obtain the FizzBuzz list of the range 1 to 100. 
     Use the GET operation on: https://raphamendonca-fizzbuzz.herokuapp.com/fizzBuzz
 
