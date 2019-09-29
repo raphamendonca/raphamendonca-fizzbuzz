@@ -1,8 +1,5 @@
 package com.github.raphamendonca.raphamendoncafizzbuzz;
 
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
-
 import io.swagger.annotations.ApiModel;
 
 @ApiModel

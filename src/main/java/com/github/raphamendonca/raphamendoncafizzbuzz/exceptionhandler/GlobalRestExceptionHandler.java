@@ -1,4 +1,4 @@
-package com.github.raphamendonca.raphamendoncafizzbuzz;
+package com.github.raphamendonca.raphamendoncafizzbuzz.exceptionhandler;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -29,7 +29,6 @@ public class GlobalRestExceptionHandler extends ResponseEntityExceptionHandler {
 			        .withStatus(HttpStatus.BAD_REQUEST)
 			        .withCode(HttpStatus.BAD_REQUEST.value())
 			        .withMessage(ex.getLocalizedMessage()).build();
-						
 		}else {
 			response = new ResponseError.ResponseErrorBuilder()
 			        .withStatus(HttpStatus.INTERNAL_SERVER_ERROR)

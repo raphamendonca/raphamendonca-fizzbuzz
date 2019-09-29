@@ -1,4 +1,4 @@
-package com.github.raphamendonca.raphamendoncafizzbuzz;
+package com.github.raphamendonca.raphamendoncafizzbuzz.exceptionhandler;
 
 import org.springframework.http.HttpStatus;
 
