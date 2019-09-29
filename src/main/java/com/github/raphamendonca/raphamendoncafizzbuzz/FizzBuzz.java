@@ -8,8 +8,6 @@ import io.swagger.annotations.ApiModel;
 @ApiModel
 public class FizzBuzz {
 
-	@NotNull
-	@Pattern(regexp = "^[0-9]*$")
 	private int number;
 
 	public FizzBuzz(Integer number) {
