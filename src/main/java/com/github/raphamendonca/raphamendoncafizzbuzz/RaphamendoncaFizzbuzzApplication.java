@@ -29,6 +29,16 @@ public class RaphamendoncaFizzbuzzApplication {
 	}
 
 	private ApiInfo apiInfo() {
-		return new ApiInfoBuilder().title("Raphael Mendonça FizzBuzz API").version("1.0.0").build();
+		return new ApiInfoBuilder()
+				.title("Raphael Mendonça FizzBuzz API")
+				.description("Fizz Buzz Game API\n"
+						+ "To play use this api to check a fizzBuzz number. Here the rules:\n" + 
+						"- If the informed number is could be divide by 3 will be returned \"Fizz\";\n" + 
+						"- If the informed number is could be divide by 5 will be returned \"Buzz\";\n" + 
+						"- If the informed number is could be divide by 15 will be returned \"FizzBuzz\";\n" + 
+						"- If is not divide by 3, 5 or 15 the given umber will be returned;\n" + 
+						"")
+				.version("1.0.0")
+				.build();
 	}
 }
