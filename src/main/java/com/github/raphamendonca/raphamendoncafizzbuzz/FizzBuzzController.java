@@ -23,7 +23,7 @@ public class FizzBuzzController {
 	@ApiOperation(value = "Obtain the list of the FizzBuzz numbers between 1 and 100")
 	@GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<FizzBuzz> listAllFizzBuzz() {
-		return validateFizzBuzz(IntStream.range(0, 100).boxed().collect(Collectors.toList()));
+		return validateFizzBuzz(IntStream.range(1, 101).boxed().collect(Collectors.toList()));
 	}
 
 	@ApiOperation(value = "Check if a given number is Fizz, Buzz or FizzBuzz")
