@@ -15,13 +15,13 @@ import org.springframework.web.bind.annotation.RestController;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 
-@RequestMapping("fizzBuzz")
+@RequestMapping("fizz-buzz")
 @RestController
 @Validated
 public class FizzBuzzController {
 
 	@ApiOperation(value = "Obtain the list of the FizzBuzz numbers between 1 and 100")
-	@GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(produces = MediaType.APPLICATION_JSON_VALUE, value = "")
 	public List<FizzBuzz> listAllFizzBuzz() {
 		return validateFizzBuzz(IntStream.range(1, 101).boxed().collect(Collectors.toList()));
 	}
