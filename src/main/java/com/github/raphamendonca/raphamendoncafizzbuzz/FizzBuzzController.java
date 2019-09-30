@@ -40,5 +40,4 @@ public class FizzBuzzController {
 		numbers.stream().forEach(number -> fizzBuzzList.add(new FizzBuzz(number)));
 		return fizzBuzzList;	
 	}
-
 }
