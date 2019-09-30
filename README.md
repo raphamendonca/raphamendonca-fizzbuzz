@@ -19,13 +19,13 @@ here the Swagger of the API:
 **https://raphamendonca-fizzbuzz.herokuapp.com/swagger-ui.html**
 
 To obtain the FizzBuzz list of the range 1 to 100. 
-    Use the GET operation on: **https://raphamendonca-fizzbuzz.herokuapp.com/fizzBuzz**
+    Use the GET operation on: **https://raphamendonca-fizzbuzz.herokuapp.com/fizz-buzz**
 
 To check if a number is a fizz, buzz or fizBuzz, add the number what you want to check as a path parameters of the operation
-    Use the GET operation on: **https://raphamendonca-fizzbuzz.herokuapp.com/fizzBuzz/3**
+    Use the GET operation on: **https://raphamendonca-fizzbuzz.herokuapp.com/fizz-buzz/3**
 
 To check more than one number in the same request. Inform them all separated with comma.
-    Use the GET operation on: **https://raphamendonca-fizzbuzz.herokuapp.com/fizzBuzz/3,7,25,19,45,32**
+    Use the GET operation on: **https://raphamendonca-fizzbuzz.herokuapp.com/fizz-buzz/3,7,25,19,45,32**
 
 ## Obs
 Can be informed only integers numbers(positive or negative)
