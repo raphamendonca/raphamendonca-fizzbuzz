@@ -25,7 +25,7 @@ public class RaphamendoncaFizzbuzzApplication {
 
 		return new Docket(DocumentationType.SWAGGER_2).select()
 				.apis(RequestHandlerSelectors.basePackage("com.github.raphamendonca.raphamendoncafizzbuzz"))
-				.paths(PathSelectors.ant("/fizzBuzz/*")).build().apiInfo(apiInfo());
+				.build().apiInfo(apiInfo());
 	}
 
 	private ApiInfo apiInfo() {
